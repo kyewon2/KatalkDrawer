@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/talk_background"
+    android:orientation="vertical"
+    tools:context=".ShowSaveTalkActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_bar" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/talkList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/list_selector"
+        android:clickable="false" >
+    </ListView>
+
+</LinearLayout>
